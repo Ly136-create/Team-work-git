@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main-content {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Start */
+    header {
+      background-color: #edf6f9;
+        height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .nav-left h2,
+    .nav-left p {
+      margin-left: 40px;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-right a {
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: none;
+      color: blue;
+    }
+
+    .nav-right a:hover {
+      color: rgba(0, 0, 255, 0.5);
+    }
+    img{
+        height: 400px;
+    }
+    /* Contact Section */
+    .contact-section {
+      flex: 3;
+      background-color: #f0f0f0;
+      padding: 40px 60px;
+    }
+
+    .contact-section h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    .contact-section a {
+      color: #009879;
+      text-decoration: none;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>This is the contact page</h1>
+  <div class="main-content">
+    <!-- Header -->
+    <header>
+      <div class="nav-left">
+        <h2>Master</h2>
+        <p>students</p>
+      </div>
+      <div class="nav-right">
+        <a href="#">Home Page</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    <img src="https://www.fong.com.au/wp-content/uploads/working-from-home-tips.jpg" alt="">
+    <!-- Contact Info Section -->
+    <div class="contact-section">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> <a href="mailto:example@email.com">example@email.com</a></p>
+      <p><strong>Phone:</strong> +855 12 345 678</p>
+      <p><strong>Address:</strong> Phnom Penh, Cambodia</p>
+    </div>
+  </div>
 </body>
+
 </html>
